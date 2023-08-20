@@ -7,9 +7,10 @@ import ReactDOM from "react-dom";
 const Title=()=>(
     <h1 className="head">namaste react</h1>
 );
-
+const number="hello";
 const HeadingComponent=()=>(
     <div id="container">
+        {number}
            <Title />
            <Title></Title>
            {Title()}

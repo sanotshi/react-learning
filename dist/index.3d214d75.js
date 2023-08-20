@@ -2957,17 +2957,19 @@ const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
         columnNumber: 5
     }, undefined);
 _c = Title;
+const number = "hello";
 const HeadingComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         id: "container",
         children: [
+            number,
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 12
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 14,
+                lineNumber: 15,
                 columnNumber: 12
             }, undefined),
             Title(),
@@ -2976,7 +2978,7 @@ const HeadingComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: "this is react functional component"
             }, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 12
             }, undefined)
         ]
@@ -2989,7 +2991,7 @@ _c1 = HeadingComponent;
 const root = (0, _reactDomDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
     fileName: "index.js",
-    lineNumber: 20,
+    lineNumber: 21,
     columnNumber: 13
 }, undefined));
 var _c, _c1;
