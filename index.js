@@ -11,6 +11,8 @@ const Title=()=>(
 const HeadingComponent=()=>(
     <div id="container">
            <Title />
+           <Title></Title>
+           {Title()}
            <h1 className="heading">this is react functional component</h1>
     </div>
 );

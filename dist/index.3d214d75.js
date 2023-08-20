@@ -2965,12 +2965,18 @@ const HeadingComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 lineNumber: 13,
                 columnNumber: 12
             }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 14,
+                columnNumber: 12
+            }, undefined),
+            Title(),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 className: "heading",
                 children: "this is react functional component"
             }, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 14,
+                lineNumber: 16,
                 columnNumber: 12
             }, undefined)
         ]
@@ -2983,7 +2989,7 @@ _c1 = HeadingComponent;
 const root = (0, _reactDomDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
     fileName: "index.js",
-    lineNumber: 18,
+    lineNumber: 20,
     columnNumber: 13
 }, undefined));
 var _c, _c1;
