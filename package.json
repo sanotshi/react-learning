@@ -4,6 +4,8 @@
   "description": "react startup project",
   "main": "index.js",
   "scripts": {
+    "start":"parcel index.html",
+    "build":"parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/sanotshi/react-learning/issues"
   },
-  "homepage": "https://github.com/sanotshi/react-learning#readme"
+  "homepage": "https://github.com/sanotshi/react-learning#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
