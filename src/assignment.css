@@ -1,0 +1,276 @@
+body {
+    background-color: black;
+  }
+  .sidenav {
+    height: 100%;
+    width: 6vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #343333;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  .sidenav .sidenav-icon,
+  .sidenav-icon-home {
+    color: white;
+    display: flex;
+    padding: 5px;
+    margin: 15px;
+    /* align-items: center; */
+  }
+  .sidenav-icon-home {
+    background-color: red;
+    border-radius: 15px;
+  }
+  /* .home {
+    height: 30px;
+    width: 30px;
+    padding: 8px 8px;
+    background-color: red;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 20px 20px;
+  }
+  .share {
+    height: 30px;
+    width: 30px;
+    padding: 8px 8px;
+    cursor: pointer;
+    margin: 20px 20px;
+  }
+  .community {
+    height: 30px;
+    width: 30px;
+    padding: 8px 8px;
+    cursor: pointer;
+    margin: 20px 20px;
+  } */
+  .topnav {
+    overflow: hidden;
+    background-color: #3c3939;
+    height: 10vh;
+    margin: 0px 1px 30px 92px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topnav input {
+    float: left;
+    display: block;
+    color: rgb(73, 71, 71);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav .icon-container {
+    float: right;
+  }
+  .icon-container .nav-icon {
+    color: white;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+  }
+  .dot-icon {
+    height: 7px;
+    width: 7px;
+    background-color: red;
+    border-radius: 50%;
+    /* border: 1px solid white; */
+    display: inline-block;
+    position: relative;
+    top: -8px;
+    left: -12px;
+  }
+  
+  .search-container,
+  .icon-container {
+    display: flex;
+  }
+  .profile-icon {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+  .notification {
+    height: 30px;
+    width: 5px 5px;
+    padding: 8px 8px;
+    margin: 10px 1px;
+  }
+  .search {
+    height: 10px;
+    width: 5px 5px;
+    padding: 8px 10px;
+    margin: 10px 1px;
+    border-radius: 10px;
+  }
+  .search1 {
+    height: 30px;
+    width: 5px 5px;
+    padding: 8px 8px;
+    margin: 10px 1px;
+  }
+  .nav-button {
+    padding: 1px 5px;
+    margin: 0px 8px;
+    border-radius: 30px;
+    color: white;
+    background-color: red;
+    width: 80px;
+    border-color: red;
+  }
+  .section {
+    margin: 0 0 0 100px;
+  }
+  .main {
+    /* background-color: rgb(52, 51, 51); */
+    display: flex;
+    justify-content: space-between;
+    justify-content: left;
+    
+  }
+  .name {
+    color: white;
+    padding: 1px 15px 5px 9px;
+  }
+  .noti-block {
+    border: 1px solid;
+    height: 70vh;
+    width: 60vw;
+    padding: 10px;
+    margin: 10px 10px 0 10px;
+    border-radius: 10px;
+    background-color: rgb(69, 67, 67);
+  
+    /* box-shadow:-8px -8px 15px rgba(139, 136, 136, 0.208),5px 5px 15px rgba(109, 107, 107, 0.082); */
+    /* background: transparent; */
+  }
+  
+  .noti-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 10px;
+  }
+  .noti-header button {
+    border-radius: 20px;
+    padding: 3px 10px;
+    margin-right: 5px;
+    margin-left: 200px;
+    background-color: #7d7a7add;
+    color: #fff;
+    border: #dddd;
+  }
+  .item-content {
+    display: flex;
+    padding: 10px;
+  }
+  .item-content .profile-icon {
+    border-radius: 50%;
+    padding: 10px 8px 0 4px;
+    height: 30px;
+    width: 30px;
+  }
+  .content-header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  h2 {
+    color: white;
+    padding: 5px 5px;
+  }
+  
+  .data {
+    display: block;
+    width: 100%;
+  }
+  .content-header .dot-icon {
+    top: 0px;
+    left: 0px;
+    /* right:2px; */
+  }
+  .content-header .time {
+    text-align: right;
+  }
+  .content-header span {
+    font-size: 14px;
+    color: #dadada;
+  }
+  
+  .content-footer {
+    /* text-align: right; */
+    margin: 10px 0 0;
+    padding: 0 5px 0 0;
+    color: white;
+  }
+  
+  .content-footer p {
+    color: #ddd;
+    font-size: 13px;
+  }
+  .content-footer .buttons {
+    padding: 10px 0;
+  }
+  .content-footer button {
+    color: #fff;
+    border: none;
+    background-color: inherit;
+    padding: 0 14px 0 0;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .filters {
+    border: 1px solid;
+    height: 67vh;
+    width: 28vw;
+    padding: 5px 10px 10px;
+    margin: 10px 5px 0 10px;
+    border-radius: 10px;
+    background-color: rgb(55, 55, 55);
+   
+  }
+  .name2 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-checkbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 0 0;
+  }
+  input[type="checkbox"] {
+    background-color: red;
+    color: red;
+  }
+  input[type='checkbox']:checked {
+    background-color: red;
+  }
+ .main-button3{
+  display: flex;
+  justify-content:space-evenly ;
+ }
+  .button2 {
+    border-radius: 15px;
+    font-size: small;
+    padding: 5px 15px;
+    margin: 25px 25px;
+    cursor: pointer;
+    font-weight: 200;
+  }
+  .button3 {
+    border-radius: 15px;
+    font-size: small;
+    padding: 5px 15px;
+    margin: 25px 15px;
+    cursor: pointer;
+    font-weight: 200;
+  }

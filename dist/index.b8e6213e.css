@@ -1,0 +1,275 @@
+body {
+  background-color: #000;
+}
+
+.sidenav {
+  z-index: 1;
+  background-color: #343333;
+  width: 6vw;
+  height: 100%;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+.sidenav .sidenav-icon, .sidenav-icon-home {
+  color: #fff;
+  margin: 15px;
+  padding: 5px;
+  display: flex;
+}
+
+.sidenav-icon-home {
+  background-color: red;
+  border-radius: 15px;
+}
+
+.topnav {
+  background-color: #3c3939;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  margin: 0 1px 30px 92px;
+  padding: 10px 15px;
+  display: flex;
+  overflow: hidden;
+}
+
+.topnav input {
+  float: left;
+  color: #494747;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+  text-decoration: none;
+  display: block;
+}
+
+.topnav .icon-container {
+  float: right;
+}
+
+.icon-container .nav-icon {
+  color: #fff;
+  align-items: center;
+  padding: 3px;
+  display: flex;
+}
+
+.dot-icon {
+  background-color: red;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  position: relative;
+  top: -8px;
+  left: -12px;
+}
+
+.search-container, .icon-container {
+  display: flex;
+}
+
+.profile-icon {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.notification {
+  width: 5px 5px;
+  height: 30px;
+  margin: 10px 1px;
+  padding: 8px;
+}
+
+.search {
+  width: 5px 5px;
+  border-radius: 10px;
+  height: 10px;
+  margin: 10px 1px;
+  padding: 8px 10px;
+}
+
+.search1 {
+  width: 5px 5px;
+  height: 30px;
+  margin: 10px 1px;
+  padding: 8px;
+}
+
+.nav-button {
+  color: #fff;
+  background-color: red;
+  border-color: red;
+  border-radius: 30px;
+  width: 80px;
+  margin: 0 8px;
+  padding: 1px 5px;
+}
+
+.section {
+  margin: 0 0 0 100px;
+}
+
+.main {
+  justify-content: left;
+  display: flex;
+}
+
+.name {
+  color: #fff;
+  padding: 1px 15px 5px 9px;
+}
+
+.noti-block {
+  background-color: #454343;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 60vw;
+  height: 70vh;
+  margin: 10px 10px 0;
+  padding: 10px;
+}
+
+.noti-header {
+  justify-content: space-between;
+  padding: 0 0 10px;
+  display: flex;
+}
+
+.noti-header button {
+  color: #fff;
+  background-color: #7d7a7add;
+  border: #dddd;
+  border-radius: 20px;
+  margin-left: 200px;
+  margin-right: 5px;
+  padding: 3px 10px;
+}
+
+.item-content {
+  padding: 10px;
+  display: flex;
+}
+
+.item-content .profile-icon {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 10px 8px 0 4px;
+}
+
+.content-header {
+  color: #fff;
+  justify-content: space-between;
+  display: flex;
+}
+
+h2 {
+  color: #fff;
+  padding: 5px;
+}
+
+.data {
+  width: 100%;
+  display: block;
+}
+
+.content-header .dot-icon {
+  top: 0;
+  left: 0;
+}
+
+.content-header .time {
+  text-align: right;
+}
+
+.content-header span {
+  color: #dadada;
+  font-size: 14px;
+}
+
+.content-footer {
+  color: #fff;
+  margin: 10px 0 0;
+  padding: 0 5px 0 0;
+}
+
+.content-footer p {
+  color: #ddd;
+  font-size: 13px;
+}
+
+.content-footer .buttons {
+  padding: 10px 0;
+}
+
+.content-footer button {
+  color: #fff;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+  padding: 0 14px 0 0;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.filters {
+  background-color: #373737;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 28vw;
+  height: 67vh;
+  margin: 10px 5px 0 10px;
+  padding: 5px 10px 10px;
+}
+
+.name2 {
+  color: #fff;
+  flex-direction: column;
+  display: flex;
+}
+
+.main-checkbox {
+  justify-content: space-between;
+  padding: 10px 0 0;
+  display: flex;
+}
+
+input[type="checkbox"] {
+  color: red;
+  background-color: red;
+}
+
+input[type="checkbox"]:checked {
+  background-color: red;
+}
+
+.main-button3 {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.button2 {
+  cursor: pointer;
+  border-radius: 15px;
+  margin: 25px;
+  padding: 5px 15px;
+  font-size: small;
+  font-weight: 200;
+}
+
+.button3 {
+  cursor: pointer;
+  border-radius: 15px;
+  margin: 25px 15px;
+  padding: 5px 15px;
+  font-size: small;
+  font-weight: 200;
+}
+
+/*# sourceMappingURL=index.b8e6213e.css.map */
