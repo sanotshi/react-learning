@@ -1,3 +1,5 @@
+import profile from '../assets/Profile.jpg';
+
 const Section=()=> {
 return (
 <div className="section">
@@ -11,7 +13,7 @@ return (
                 <div className="item">
                     <div className="item-content">
                         <div>
-                            <img src="./components/profile.jpg" alt="user" className="profile-icon"/>
+                            <img src={profile} alt="user" className="profile-icon"/>
                         </div>
                         <div className="data">
                             <div className="content-header">
@@ -38,7 +40,7 @@ return (
                 <div className="item">
                     <div className="item-content">
                         <div>
-                            <img src="./components/profile.jpg" alt="user" className="profile-icon"/>
+                            <img src={profile} alt="user" className="profile-icon"/>
                         </div>
                         <div className="data">
                             <div className="content-header">

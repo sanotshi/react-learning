@@ -2947,63 +2947,29 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactDom = require("react-dom");
 var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
-// const heading=React.createElement("h1",{},"this is react")
-const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        className: "head",
-        children: "namaste react"
-    }, void 0, false, {
-        fileName: "index.js",
-        lineNumber: 8,
-        columnNumber: 5
-    }, undefined);
-_c = Title;
+var _assignment = require("./src/assignment");
 const number = "hello";
-const HeadingComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        id: "container",
-        children: [
-            number,
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
-                fileName: "index.js",
-                lineNumber: 14,
-                columnNumber: 12
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
-                fileName: "index.js",
-                lineNumber: 15,
-                columnNumber: 12
-            }, undefined),
-            Title(),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "heading",
-                children: "this is react functional component"
-            }, void 0, false, {
-                fileName: "index.js",
-                lineNumber: 17,
-                columnNumber: 12
-            }, undefined)
-        ]
-    }, void 0, true, {
+const Index = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _assignment.Assignment), {}, void 0, false, {
         fileName: "index.js",
-        lineNumber: 12,
+        lineNumber: 7,
         columnNumber: 5
     }, undefined);
-_c1 = HeadingComponent;
+_c = Index;
 const root = (0, _reactDomDefault.default).createRoot(document.getElementById("root"));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Index, {}, void 0, false, {
     fileName: "index.js",
-    lineNumber: 21,
+    lineNumber: 10,
     columnNumber: 13
 }, undefined));
-var _c, _c1;
-$RefreshReg$(_c, "Title");
-$RefreshReg$(_c1, "HeadingComponent");
+var _c;
+$RefreshReg$(_c, "Index");
 
   $parcel$ReactRefreshHelpers$e4e3.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./src/assignment":"eP74D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27167,7 +27133,124 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"gkKU3":[function(require,module,exports) {
+},{}],"eP74D":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1293 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1293.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Assignment", ()=>Assignment);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _sideNav = require("./components/SideNav");
+var _sideNavDefault = parcelHelpers.interopDefault(_sideNav);
+var _topNav = require("./components/TopNav");
+var _topNavDefault = parcelHelpers.interopDefault(_topNav);
+var _section = require("./components/Section");
+var _sectionDefault = parcelHelpers.interopDefault(_section);
+const Assignment = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "app",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sideNavDefault.default), {}, void 0, false, {
+                fileName: "src/assignment.js",
+                lineNumber: 9,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _topNavDefault.default), {}, void 0, false, {
+                fileName: "src/assignment.js",
+                lineNumber: 10,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sectionDefault.default), {}, void 0, false, {
+                fileName: "src/assignment.js",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/assignment.js",
+        lineNumber: 8,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Assignment;
+var _c;
+$RefreshReg$(_c, "Assignment");
+
+  $parcel$ReactRefreshHelpers$1293.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./components/SideNav":"c4Gum","./components/TopNav":"35abX","./components/Section":"j8CX0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"c4Gum":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$c273 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$c273.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const SideNav = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "sidenav",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "material-symbols-outlined sidenav-icon-home",
+                children: "home"
+            }, void 0, false, {
+                fileName: "src/components/SideNav.js",
+                lineNumber: 6,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "material-symbols-outlined sidenav-icon",
+                children: "share"
+            }, void 0, false, {
+                fileName: "src/components/SideNav.js",
+                lineNumber: 9,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "material-symbols-outlined sidenav-icon",
+                children: "diversity_3"
+            }, void 0, false, {
+                fileName: "src/components/SideNav.js",
+                lineNumber: 12,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "material-symbols-outlined sidenav-icon",
+                children: "event"
+            }, void 0, false, {
+                fileName: "src/components/SideNav.js",
+                lineNumber: 15,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/SideNav.js",
+        lineNumber: 4,
+        columnNumber: 1
+    }, undefined);
+};
+_c = SideNav;
+exports.default = SideNav;
+var _c;
+$RefreshReg$(_c, "SideNav");
+
+  $parcel$ReactRefreshHelpers$c273.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27335,6 +27418,737 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}]},["2UeK4","1xC6H","bB7Pu"], "bB7Pu", "parcelRequire22bc")
+},{"7422ead32dcc1e6b":"786KC"}],"35abX":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ea9f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ea9f.prelude(module);
+
+try {
+// import LOGO from "../components/LOGO";
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _profileJpg = require("../assets/Profile.jpg");
+var _profileJpgDefault = parcelHelpers.interopDefault(_profileJpg);
+const TopNav = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        class: "topnav",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                class: "search-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        placeholder: "Search for stars and plants",
+                        class: "search"
+                    }, void 0, false, {
+                        fileName: "src/components/TopNav.js",
+                        lineNumber: 9,
+                        columnNumber: 9
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/TopNav.js",
+                    lineNumber: 8,
+                    columnNumber: 5
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/TopNav.js",
+                lineNumber: 7,
+                columnNumber: 1
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                class: "icon-container",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        class: "button nav-button",
+                        children: "Create"
+                    }, void 0, false, {
+                        fileName: "src/components/TopNav.js",
+                        lineNumber: 15,
+                        columnNumber: 5
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: " nav-icon",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                class: "material-symbols-outlined",
+                                children: "search"
+                            }, void 0, false, {
+                                fileName: "src/components/TopNav.js",
+                                lineNumber: 18,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                class: "dot-icon"
+                            }, void 0, false, {
+                                fileName: "src/components/TopNav.js",
+                                lineNumber: 21,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/TopNav.js",
+                        lineNumber: 17,
+                        columnNumber: 5
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "nav-icon",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                class: "material-symbols-outlined",
+                                children: "notifications"
+                            }, void 0, false, {
+                                fileName: "src/components/TopNav.js",
+                                lineNumber: 25,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                class: "dot-icon"
+                            }, void 0, false, {
+                                fileName: "src/components/TopNav.js",
+                                lineNumber: 28,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/TopNav.js",
+                        lineNumber: 23,
+                        columnNumber: 5
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        class: "nav-icon",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _profileJpgDefault.default),
+                            alt: "user",
+                            class: "profile-icon"
+                        }, void 0, false, {
+                            fileName: "src/components/TopNav.js",
+                            lineNumber: 31,
+                            columnNumber: 9
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/TopNav.js",
+                        lineNumber: 30,
+                        columnNumber: 5
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/TopNav.js",
+                lineNumber: 13,
+                columnNumber: 1
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/TopNav.js",
+        lineNumber: 6,
+        columnNumber: 1
+    }, undefined);
+};
+_c = TopNav;
+exports.default = TopNav;
+var _c;
+$RefreshReg$(_c, "TopNav");
+
+  $parcel$ReactRefreshHelpers$ea9f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../assets/Profile.jpg":"kGhZj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kGhZj":[function(require,module,exports) {
+module.exports = require("7ff881f0b57bbfd").getBundleURL("UckoE") + "Profile.6452b292.jpg" + "?" + Date.now();
+
+},{"7ff881f0b57bbfd":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"j8CX0":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3c2d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3c2d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _profileJpg = require("../assets/Profile.jpg");
+var _profileJpgDefault = parcelHelpers.interopDefault(_profileJpg);
+const Section = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "section",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "name",
+                children: "Notifications"
+            }, void 0, false, {
+                fileName: "src/components/Section.js",
+                lineNumber: 6,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "main",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "noti-block",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "noti-header",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                        children: "New"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Section.js",
+                                        lineNumber: 10,
+                                        columnNumber: 21
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                        children: "This week's astrono"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Section.js",
+                                        lineNumber: 11,
+                                        columnNumber: 21
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Section.js",
+                                lineNumber: 9,
+                                columnNumber: 17
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "item",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "item-content",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                src: (0, _profileJpgDefault.default),
+                                                alt: "user",
+                                                className: "profile-icon"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Section.js",
+                                                lineNumber: 16,
+                                                columnNumber: 29
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 15,
+                                            columnNumber: 25
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "data",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "content-header",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                    children: "Betelgeuse,a red supergiant star"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Section.js",
+                                                                    lineNumber: 21,
+                                                                    columnNumber: 37
+                                                                }, undefined),
+                                                                " ",
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    children: "on Betelgeuse-3600 "
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Section.js",
+                                                                    lineNumber: 21,
+                                                                    columnNumber: 77
+                                                                }, undefined)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/Section.js",
+                                                            lineNumber: 20,
+                                                            columnNumber: 33
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "time",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    children: "1 hour ago"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Section.js",
+                                                                    lineNumber: 24,
+                                                                    columnNumber: 37
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                    className: "dot-icon"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Section.js",
+                                                                    lineNumber: 25,
+                                                                    columnNumber: 37
+                                                                }, undefined)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/Section.js",
+                                                            lineNumber: 23,
+                                                            columnNumber: 33
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Section.js",
+                                                    lineNumber: 19,
+                                                    columnNumber: 29
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "content-footer",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                            children: "it's amazing,thanks for sharing!"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Section.js",
+                                                            lineNumber: 29,
+                                                            columnNumber: 33
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "buttons",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                                    className: "",
+                                                                    children: "Like "
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Section.js",
+                                                                    lineNumber: 31,
+                                                                    columnNumber: 37
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                                    className: "",
+                                                                    children: "Reply"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Section.js",
+                                                                    lineNumber: 32,
+                                                                    columnNumber: 37
+                                                                }, undefined)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/Section.js",
+                                                            lineNumber: 30,
+                                                            columnNumber: 33
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Section.js",
+                                                    lineNumber: 28,
+                                                    columnNumber: 29
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 18,
+                                            columnNumber: 25
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Section.js",
+                                    lineNumber: 14,
+                                    columnNumber: 21
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Section.js",
+                                lineNumber: 13,
+                                columnNumber: 17
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                                fileName: "src/components/Section.js",
+                                lineNumber: 39,
+                                columnNumber: 17
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "item",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "item-content",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                src: (0, _profileJpgDefault.default),
+                                                alt: "user",
+                                                className: "profile-icon"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Section.js",
+                                                lineNumber: 43,
+                                                columnNumber: 29
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 42,
+                                            columnNumber: 25
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "data",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "content-header",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                    children: "Sirius,the brightest star in the night"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Section.js",
+                                                                    lineNumber: 48,
+                                                                    columnNumber: 37
+                                                                }, undefined),
+                                                                " ",
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    children: "sky on Sirius-3600"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Section.js",
+                                                                    lineNumber: 48,
+                                                                    columnNumber: 83
+                                                                }, undefined)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/Section.js",
+                                                            lineNumber: 47,
+                                                            columnNumber: 33
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "time",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    children: "1 hour ago"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Section.js",
+                                                                    lineNumber: 51,
+                                                                    columnNumber: 37
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                    className: "dot-icon"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Section.js",
+                                                                    lineNumber: 52,
+                                                                    columnNumber: 37
+                                                                }, undefined)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/Section.js",
+                                                            lineNumber: 50,
+                                                            columnNumber: 33
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Section.js",
+                                                    lineNumber: 46,
+                                                    columnNumber: 29
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "content-footer",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                            children: "it's fascinating,thanks for the information!"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Section.js",
+                                                            lineNumber: 56,
+                                                            columnNumber: 33
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "buttons",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                                    className: "",
+                                                                    children: "Like "
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Section.js",
+                                                                    lineNumber: 58,
+                                                                    columnNumber: 37
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                                    className: "",
+                                                                    children: "Reply"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Section.js",
+                                                                    lineNumber: 59,
+                                                                    columnNumber: 37
+                                                                }, undefined)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/Section.js",
+                                                            lineNumber: 57,
+                                                            columnNumber: 33
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Section.js",
+                                                    lineNumber: 55,
+                                                    columnNumber: 29
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 45,
+                                            columnNumber: 25
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Section.js",
+                                    lineNumber: 41,
+                                    columnNumber: 21
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Section.js",
+                                lineNumber: 40,
+                                columnNumber: 17
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {}, void 0, false, {
+                                fileName: "src/components/Section.js",
+                                lineNumber: 66,
+                                columnNumber: 17
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Section.js",
+                        lineNumber: 8,
+                        columnNumber: 13
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "filters",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "name2",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                    children: "Filter"
+                                }, void 0, false, {
+                                    fileName: "src/components/Section.js",
+                                    lineNumber: 71,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "main-checkbox",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: "Comments"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 73,
+                                            columnNumber: 25
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            type: "checkbox",
+                                            className: "box"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 74,
+                                            columnNumber: 25
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Section.js",
+                                    lineNumber: 72,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "main-checkbox",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: "Likes"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 77,
+                                            columnNumber: 25
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            type: "checkbox",
+                                            className: "box"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 78,
+                                            columnNumber: 25
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Section.js",
+                                    lineNumber: 76,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "main-checkbox",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: "Review"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 81,
+                                            columnNumber: 25
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            type: "checkbox",
+                                            className: "box"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 82,
+                                            columnNumber: 25
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Section.js",
+                                    lineNumber: 80,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "main-checkbox",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: "Mentions"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 85,
+                                            columnNumber: 25
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            type: "checkbox",
+                                            className: "box"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 86,
+                                            columnNumber: 25
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Section.js",
+                                    lineNumber: 84,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "main-checkbox",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: "Purchases"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 89,
+                                            columnNumber: 25
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            type: "checkbox",
+                                            className: "box"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 90,
+                                            columnNumber: 25
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Section.js",
+                                    lineNumber: 88,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "main-checkbox",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            children: "Message"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 93,
+                                            columnNumber: 25
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                            type: "checkbox",
+                                            className: "box"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 94,
+                                            columnNumber: 25
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Section.js",
+                                    lineNumber: 92,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "main-button3",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                            className: "button2",
+                                            children: "Select all"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 97,
+                                            columnNumber: 25
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                            className: "button3",
+                                            children: "Unselect all"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Section.js",
+                                            lineNumber: 98,
+                                            columnNumber: 25
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Section.js",
+                                    lineNumber: 96,
+                                    columnNumber: 21
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Section.js",
+                            lineNumber: 70,
+                            columnNumber: 17
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Section.js",
+                        lineNumber: 69,
+                        columnNumber: 13
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Section.js",
+                lineNumber: 7,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Section.js",
+        lineNumber: 5,
+        columnNumber: 1
+    }, undefined);
+};
+_c = Section;
+exports.default = Section;
+var _c;
+$RefreshReg$(_c, "Section");
+
+  $parcel$ReactRefreshHelpers$3c2d.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../assets/Profile.jpg":"kGhZj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["2UeK4","1xC6H","bB7Pu"], "bB7Pu", "parcelRequire22bc")
 
 //# sourceMappingURL=index.3d214d75.js.map
