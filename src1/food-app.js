@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Header from "./components/Header";
+import Body from "./components/Body";
 
  const FoodApp=()=>{
     return (
-        <div className="head">
-            <h1>hello</h1>
+        <div className="food">
+            <Header />
+            <Body />
         </div>
     );
 }
-export default FoodApp;
-//  const root=ReactDOM.createRoot(document.getElementById("root"));
-//  root.render(<FoodApp />);
+
+  const root=ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<FoodApp />);
