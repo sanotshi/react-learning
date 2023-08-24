@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 const Body=()=>{
     const ResCards=(props)=> {
         return (
@@ -10,12 +12,10 @@ const Body=()=>{
             </div>
         )
     }
-    return (
-        <div className="body">
-        <div className="search">
-            <input type="text" placeholder="search"></input>
-        </div>
-        <div className="resCard">
+    // let [ListOfCards,setListOfCards]=useState([
+     const ListOfCards=()=>{
+         return(
+    <div className="resCard">
             <div className="resList">
             <img className="card-logo"src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kwvmoc0nvrzuh5nshk7z"/>
              <ResCards 
@@ -98,7 +98,24 @@ const Body=()=>{
             />
             </div>
         </div>
+           )
+         }
+    //  ])
+    return (
+        <div className="body">
+        <div className="search">
+            <button className="filter-btn" onClick={()=>{console.log("clicked")
+            //  const filtered=ListOfCards.filter((resList)=>resList.rating>4);
+            //  setListOfCards(filtered);
+        }}>
+                Top Rated Ratings</button>
+            <div className="resCard">
+                <ListOfCards/>
+            </div>
         </div>
+        
+        </div>
+        
     )
 }
 export default Body;
