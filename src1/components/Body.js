@@ -1,4 +1,5 @@
 import { useState } from "react"
+import useOnlineStatus from "./useOnlineStatus";
 
 const Body=()=>{
     const ResCards=(props)=> {
@@ -12,6 +13,12 @@ const Body=()=>{
             </div>
         )
     }
+    const onlineStatus = useOnlineStatus();
+    if(onlineStatus === false)
+    return (
+    <h1>Looks like you're offline!! check your internet connection</h1>
+    );
+
     // let [ListOfCards,setListOfCards]=useState([
      const ListOfCards=()=>{
          return(
@@ -101,6 +108,7 @@ const Body=()=>{
            )
          }
     //  ])
+    
     return (
         <div className="body">
         <div className="search">
@@ -111,6 +119,7 @@ const Body=()=>{
                 Top Rated Ratings</button>
             <div className="resCard">
                 <ListOfCards/>
+                
             </div>
         </div>
         

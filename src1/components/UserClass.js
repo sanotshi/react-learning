@@ -6,9 +6,9 @@ class UserClass extends React.Component{
      console.log(props)
      this.state={
         userInfo:{
-            name:"Dummy",
+            // name:"Dummy",
 
-            location:"Default",
+            // location:"Default",
         },
      };
      }
@@ -20,6 +20,13 @@ class UserClass extends React.Component{
             userInfo:json,
         })
         console.log(json);
+
+        this.timer=setInterval(()=>{
+            console.log("namastey")
+        },1000)
+    }
+    componentWillUnmount(){
+        clearInterval(this.timer);
     }
     render(){
         const{count,count1}=this.state;
