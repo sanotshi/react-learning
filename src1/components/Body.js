@@ -111,6 +111,10 @@ const Body=()=>{
     
     return (
         <div className="body">
+            <div className="search">
+                <input type="text"/>
+                <button className="search">search</button>
+            </div>
         <div className="search">
             <button className="filter-btn" onClick={()=>{console.log("clicked")
             //  const filtered=ListOfCards.filter((resList)=>resList.rating>4);
