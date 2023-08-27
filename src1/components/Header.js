@@ -1,18 +1,18 @@
 import {Link} from "react-router-dom";
 const Header=()=>{
     return (
-        <div className="flex pa-4">
-            <div className="logo">
-                <img className="logo" src="https://assets.materialup.com/uploads/61d86780-be13-47fa-81a6-226aac22db27/preview.jpg"/>
+        <div className="flex justify-between m-2 border border-solid border-black bg-pink-200 sm:bg-red-200">
+            <div className="">
+                <img className="w-48 p-5 cursor-pointer" src="https://assets.materialup.com/uploads/61d86780-be13-47fa-81a6-226aac22db27/preview.jpg"/>
             </div>
-            <div className="navItems">
-                <ul>
-                    <li> 
+            <div className="">
+                <ul className="flex items-center p-5 my-5 font-medium">
+                    <li className="p-5 underline text-blue-500"> 
                         <Link to="/">Home</Link>
                     </li>
-                    <li><a href="/about">About us</a></li>
-                    <li>Contacts</li>
-                    <li>Cart</li>
+                    <li className="p-5 underline text-blue-500"><a href="/about">About us</a></li>
+                    <li className="p-5 cursor-pointer hover:underline">Contacts</li>
+                    <li className="p-5 cursor-pointer hover:underline">Cart</li>
                 </ul>
             </div>
         </div>
