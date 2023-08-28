@@ -1,17 +1,31 @@
-import { useState } from "react"
+import { useState,useEffect } from "react";
 import useOnlineStatus from "./useOnlineStatus";
 import ListOfCards from "./ListOfCards";
-
-import {Link} from "react-router-dom";
+import Shimmer from "./Shimmer";
 
 const Body=()=>{
    
-    const onlineStatus = useOnlineStatus();
-    if(onlineStatus === false)
-    return (
-    <h1>Looks like you're offline!! check your internet connection</h1>
-    );
+//   const[ListOfCards,setListOfCards]=useState([]);
+//    useEffect(()=>{
+//       fetchData();
+//        },[]);
+ 
+//   const fetchData=async()=>{
+//       const data=await fetch(<ListOfCards />)
+//       const json=await data.json();
+//      setListOfCards(json.data)
+//    }
+ 
 
+//    if(ListOfCards.length===0){
+//      return<Shimmer />;
+//       }
+    // const onlineStatus = useOnlineStatus();
+    // if(onlineStatus === false)
+    // return (
+    // <h1>Looks like you're offline!! check your internet connection</h1>
+    // // );
+    //   return ListOfCards.length===0 ? <Shimmer /> :
       return (
         <div className="body">
             <div className="flex">
@@ -28,9 +42,9 @@ const Body=()=>{
                 </div>
         </div>
             <div className="">
-                 <Link to="/MenuList">
+                 
                    <ListOfCards  />
-                   </Link> 
+                   
             </div>
         
         

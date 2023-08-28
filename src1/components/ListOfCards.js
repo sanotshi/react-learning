@@ -1,4 +1,4 @@
-
+import About from "./About";
 
       const ListOfCards=()=>{
         const ResCards=(props)=> {
@@ -17,6 +17,7 @@
 <div className="flex flex-wrap p-1 ">
     
        <div className="border border-solid bg-gray-100 p-3 mx-2 my-1 hover:bg-gray-300 cursor-pointer">
+       
            <label className="absolute bg-black text-white p-1 rounded-lg">Promoted</label>
        <img className="w-44 h-28 rounded-lg"src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kwvmoc0nvrzuh5nshk7z"/>
         <ResCards className=""
@@ -92,7 +93,7 @@
                  cost="500"
        />
        </div>
-       <div className="border  border-solid bg-gray-100 p-3 mx-2 my-1 hover:bg-gray-300 cursor-pointer">
+       <div className="border border-solid bg-gray-100 p-3 mx-2 my-1 hover:bg-gray-300 cursor-pointer">
                  <label className="absolute bg-black text-white p-1 rounded-lg">Promoted</label>
                 <img className="w-44 h-28 rounded-lg"src="https://www.aldaaz.com/images/gallery/IMG_1227.jpg"/>
              <ResCards resName="AI Daaz"
