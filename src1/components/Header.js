@@ -21,7 +21,7 @@ const Header=()=>{
                     <li className="p-5 cursor-pointer hover:underline">Cart</li>
                     <button className="border border-black p-1" 
                            onClick={()=>{
-                                 setBtnNameReact("Logout");
+                              btnName==="Login"? setBtnNameReact("Logout"):setBtnNameReact("Login");
                        
                                  }}>{btnName}</button>
                 </ul>
