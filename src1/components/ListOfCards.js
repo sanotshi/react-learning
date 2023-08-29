@@ -13,21 +13,22 @@ import { useEffect } from "react";
                 </div>
             )
         }
+        //  const result=ListOfCards;
+        //   console.log(result);
+       ;; // console.log(<ResCards />)
         useEffect(()=>{
             fetchData();
               },[]);
      
          const fetchData=async()=>{
-            const data=await  fetch("http://localhost:1234/")
+            const data=await  fetch("http://localhost:1234/about")
             console.log(data);
          }
-        //  useEffect(() => {
-        //     fetch("http://localhost:1234")
-        //     //   .then((response) => response.json())
-        //       .then((actualData) => console.log(actualData));
-        //   }, []);
+
+         
        
     return(
+        
 <div className="flex flex-wrap p-1 ">
     
        <div className="border border-solid bg-gray-100 p-3 mx-2 my-1 hover:bg-gray-300 cursor-pointer" onClick={()=>{
@@ -120,4 +121,5 @@ import { useEffect } from "react";
         </div>
             )
           }
+          
     export default ListOfCards;
