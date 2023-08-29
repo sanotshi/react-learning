@@ -4,17 +4,19 @@ import ListOfCards from "./ListOfCards";
 import Shimmer from "./Shimmer";
 
 const Body=()=>{
-   
-//   const[ListOfCards,setListOfCards]=useState([]);
-//    useEffect(()=>{
-//       fetchData();
-//        },[]);
+    const[listOfRestra,setListOfRestra]=useState([]);
+   const[searchText,setSearchText]=useState("");
+    // const[ListOfCards,setListOfCards]=useState([]);
+    //   useEffect(()=>{
+    //     fetchData();
+    //       },[]);
  
-//   const fetchData=async()=>{
-//       const data=await fetch(<ListOfCards />)
-//       const json=await data.json();
-//      setListOfCards(json.data)
-//    }
+    //  const fetchData=async()=>{
+    //     const data=await fetch("http://localhost:1234 ")
+    //     console.log(data);
+    //     const json=await data.json();
+    //    setListOfCards(json.data)
+    //   }
  
 
 //    if(ListOfCards.length===0){
@@ -30,8 +32,13 @@ const Body=()=>{
         <div className="body">
             <div className="flex">
             <div className="">
-                <input type="text" className="border border-solid border-black m-2 cursor-pointer"/>
-                <button className="font-medium bg-green-100 p-1 px-2 rounded-lg cursor-pointer">search</button>
+                <input type="text" className="border border-solid border-black m-2 cursor-pointer" value={searchText} onChange={(e)=>{
+                    setSearchText(e.target.value)}}/>
+                <button className="font-medium bg-green-100 p-1 px-2 rounded-lg cursor-pointer" onClick={()=>{
+                    // console.log(searchText);
+                    const filteredRestra=listOfRestra.filter((ListOfCards)=>ListOfCards.ResCards.props.resName.includes(searchText));
+                    setListOfRestra(filteredRestra);
+                }}>search</button>
             </div>
         <div className="search">
             <button className=" m-2 mx-10 p-1 border border-solid bg-gray-100 cursor-pointer hover:bg-gray-300" onClick={()=>{console.log("clicked")
@@ -44,6 +51,7 @@ const Body=()=>{
             <div className="">
                  
                    <ListOfCards  />
+                
                    
             </div>
         

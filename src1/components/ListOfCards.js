@@ -1,4 +1,5 @@
 import About from "./About";
+import { useEffect } from "react";
 
       const ListOfCards=()=>{
         const ResCards=(props)=> {
@@ -12,12 +13,26 @@ import About from "./About";
                 </div>
             )
         }
+        useEffect(()=>{
+            fetchData();
+              },[]);
+     
+         const fetchData=async()=>{
+            const data=await  fetch("http://localhost:1234/")
+            console.log(data);
+         }
+        //  useEffect(() => {
+        //     fetch("http://localhost:1234")
+        //     //   .then((response) => response.json())
+        //       .then((actualData) => console.log(actualData));
+        //   }, []);
        
     return(
 <div className="flex flex-wrap p-1 ">
     
-       <div className="border border-solid bg-gray-100 p-3 mx-2 my-1 hover:bg-gray-300 cursor-pointer">
-       
+       <div className="border border-solid bg-gray-100 p-3 mx-2 my-1 hover:bg-gray-300 cursor-pointer" onClick={()=>{
+        console.log("clicked")
+       }}>
            <label className="absolute bg-black text-white p-1 rounded-lg">Promoted</label>
        <img className="w-44 h-28 rounded-lg"src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/kwvmoc0nvrzuh5nshk7z"/>
         <ResCards className=""
