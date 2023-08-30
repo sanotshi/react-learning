@@ -2,7 +2,7 @@
   "name": "learning1",
   "version": "1.0.0",
   "description": "react startup project",
-  "main": "index.js",
+  "main": "food-app.js",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/sanotshi/react-learning#readme",
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.9.3",
+    "@parcel/transformer-webmanifest": "^2.9.3",
     "parcel": "^2.9.3",
     "postcss": "^8.4.28",
     "process": "^0.11.10",

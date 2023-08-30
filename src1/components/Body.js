@@ -12,14 +12,13 @@ const Body=()=>{
            },[]);
  
        const fetchData=async()=>{
-         const data=await fetch("  https://www.swiggy.com/restaurants/varalakshmi-tiffins-near-apollo-hospital-jubilee-hills-hyderabad-344287")
-    // //     console.log(data);
-        //   const json=await data.json();
-          console.log(data);
+         const data=await fetch("  http://localhost:1234")
+        //  console.log(data);
+            const json=await data.json();
+           console.log(json);
     // //    setListOfCards(json.data)
         }
  
-
 //    if(ListOfCards.length===0){
 //      return<Shimmer />;
 //       }
@@ -37,7 +36,7 @@ const Body=()=>{
                     setSearchText(e.target.value)}}/>
                 <button className="font-medium bg-green-100 p-1 px-2 rounded-lg cursor-pointer" onClick={()=>{
                     // console.log(searchText);
-                    const filteredRestra=listOfRestra.filter((ListOfCards)=>ListOfCards.ResCards.resName.includes(searchText));
+                    const filteredRestra=listOfRestra.filter((ListOfCards)=>ListOfCards.props.resName.includes(searchText));
                     setListOfRestra(filteredRestra);
                 }}>search</button>
             </div>
@@ -55,7 +54,6 @@ const Body=()=>{
                 
             </div>
         </div>
-        
-    )
+            )
 }
 export default Body;
