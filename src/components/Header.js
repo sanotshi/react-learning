@@ -2,7 +2,7 @@
 
 const Header=()=>{
     return(
-        <div className="border border-black flex justify-between items-center m-1">
+        <div className="border  flex justify-between items-center mx-1 my-2 shadow-lg rounded-lg">
         <div className="w-44 m-3 cursor-pointer">
             <img src="https://graphicsfamily.com/wp-content/uploads/2020/10/Restaurant-logo-design-free-template-1536x864.jpg"/>
         </div>

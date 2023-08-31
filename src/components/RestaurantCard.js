@@ -3,18 +3,18 @@ const RestaurantCards=()=>{
         const {resData}=props;
         const {name,cuisines,costForTwoString,avgRating,deliveryTime,cloudinaryImageId}=resData.data;
         return(
-            <div className="border m-2 p-2 shodow-white-300 cursor-pointer bg-gray-100 hover:bg-gray-300 w-48">
-               <img className="w-56"
+            <div className="border m-2 p-3 shadow-lg cursor-pointer bg-white hover:bg-gray-300 w-52 rounded-lg">
+               <img className="w-56 rounded-lg"
                   src={
                         "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
                         cloudinaryImageId
                      }
                 />
-                <h1 className="text-2xl">{name}</h1>
-                <h2 className="text-lg">{cuisines.join(" , ")}</h2>
-                <h4>{costForTwoString}</h4>
-                <h3>{avgRating} stars</h3>
-                <h4>{deliveryTime} minutes</h4>
+                <h1 className="text-2xl p-1">{name}</h1>
+                <h2 className="text-lg p-1">{cuisines.join(" , ")}</h2>
+                <h4 className="p-1 ">{costForTwoString}</h4>
+                <h3 className="p-1">{avgRating} stars</h3>
+                <h4 className="p-1">{deliveryTime} minutes</h4>
             </div>
         )
     }
