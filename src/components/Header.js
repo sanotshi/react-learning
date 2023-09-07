@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import { LOGO_URL } from "../utilities/constants";
-
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -21,7 +20,7 @@ const Header = () => {
           <li className="p-3 text-lg">
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li className="p-3 text-lg">List</li>
+          <li className="p-3 text-lg">Cart</li>
           <button
             className="border px-4 bg-gray-300"
             onClick={() => {

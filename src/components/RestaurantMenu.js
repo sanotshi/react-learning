@@ -1,54 +1,62 @@
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { MENU_API } from "../utilities/constants";
+import { useParams } from "react-router-dom";
 
 const RestaurantMenu = () => {
   const [resInfo, setResInfo] = useState(null);
+  const { resId } = useParams();
 
   useEffect(() => {
     fetchMenu();
   }, []);
 
   const fetchMenu = async () => {
-    const data = await fetch(
-      "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING"
-    );
+    const data = await fetch(MENU_API + resId);
+    //  const data=await fetch("https://www.swiggy.com/restaurants/jay-jalaram-thali-kaji-maidan-gopipura-surat-205488");
+
     const json = await data.json();
     console.log(json);
     setResInfo(json.data);
-    console.log(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle.restaurants);
-    
     console.log(
-      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle.restaurants
     );
-    //  const resMenu=resInfo?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-    //  setResInfo(resMenu);
+
+    console.log(
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle.info
+    );
   };
   if (resInfo === null) return <Shimmer />;
-   const { name, cuisines, costForTwo } =
-     resInfo?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants[0]
-    .info;
 
-  const {itemCards}=resInfo?.cards[5]?.card?.card?.gridElements?.infoWithStyle.restaurants;
+  const { name, costForTwo } =
+    resInfo?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants[0]
+      ?.info;
+
+  const menuItems =
+    resInfo?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.info;
+
   return (
-    <div>
-      <h1>{name}</h1>
-      <p>{cuisines} - {costForTwo}</p>
-      {/* <h1>{itemCards.info.name}</h1> */}
-      
-       {/* <h1>{resInfo?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants[0].info?.name}</h1>  */}
+    <div className="m-2">
+      {/* <div className="p-2">
+        <h1 className="text-2xl ">{name}</h1>
+        
+      </div> */}
+      {/* <h1>{actin.text}</h1> */}
+      <div className="p-1 ">
+        <h2 className="text-xl p-1">Menu</h2>
         <ul>
-        {/* {(resInfo?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants[0]).map(item =><li>{item.info.nam}</li>)} */}
-        {/* {itemCards[0].map(item=><li>{item.card.info.name}</li>)} */}
-       </ul> 
-      {/* <h1>{name}</h1>
-      <p>{cuisines.join(",")} - {costForTwo}</p> */}
-      {/* <h3>{costForTwo}</h3> */}
-      <h2>Menu</h2>
-      <ul>
-        <li>Biryani</li>
-        <li>Burgers</li>
-        <li>Pizza</li>
-      </ul>
+          {menuItems.map((item) => (
+            <li key={item.id} className="list-disc ml-8 text-sm">
+              {item.action?.text} - {costForTwo}
+            </li>
+          ))}
+        </ul>
+        {/* <ul className="m-3" >
+          {menuItems.map((item) => (
+          <li key={item.id} className="list-disc ml-8 text-sm">{item.action.text} - {costForTwo}</li>
+        ))} 
+        </ul> */}
+      </div>
     </div>
   );
 };

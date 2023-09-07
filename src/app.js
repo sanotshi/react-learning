@@ -6,7 +6,7 @@ import Body from "./components/Body";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Contact from "./components/Contact";
-import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
+import { createBrowserRouter,RouterProvider,Outlet,Link } from "react-router-dom";
 
 const App=()=>{
     return (

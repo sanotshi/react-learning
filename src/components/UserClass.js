@@ -19,7 +19,16 @@ class UserClass extends React.Component {
       userInfo: json,
     });
     console.log(json);
-  }
+  //   this.timer=setInterval(()=>{
+  //     console.log("set time");
+  //   },1000)
+  //   console.log("did mount");
+   }
+
+  // componentWillUnmount(){
+  //   // clearInterval(this.timer);
+  //   console.log("will unmount");
+  // }
   render() {
     return (
       <div className="border m-1 p-2 border-black">
