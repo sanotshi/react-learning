@@ -1,31 +1,16 @@
-import { useState, useEffect } from "react";
+
+ import useRestaurantMenu from "../utilities/useRestaurantMenu";
 import Shimmer from "./Shimmer";
-import { MENU_API } from "../utilities/constants";
+
 import { useParams } from "react-router-dom";
 
 const RestaurantMenu = () => {
-  const [resInfo, setResInfo] = useState(null);
+  
   const { resId } = useParams();
 
-  useEffect(() => {
-    fetchMenu();
-  }, []);
+   const resInfo=useRestaurantMenu(resId);
 
-  const fetchMenu = async () => {
-    const data = await fetch(MENU_API + resId);
-    //  const data=await fetch("https://www.swiggy.com/restaurants/jay-jalaram-thali-kaji-maidan-gopipura-surat-205488");
-
-    const json = await data.json();
-    console.log(json);
-    setResInfo(json.data);
-    console.log(
-      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle.restaurants
-    );
-
-    console.log(
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle.info
-    );
-  };
+  
   if (resInfo === null) return <Shimmer />;
 
   const { name, costForTwo } =

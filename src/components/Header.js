@@ -16,9 +16,13 @@ const Header = () => {
           <li className="p-3 text-lg">
             <Link to="/">Home</Link>
           </li>
-          <li className="p-3 text-lg">About us</li>
+          <li className="p-3 text-lg">
+            <Link to="/about">About us</Link></li>
           <li className="p-3 text-lg">
             <Link to="/contact">Contact Us</Link>
+          </li>
+          <li className="p-3 text-lg">
+            <Link to="/grocery">Grocery</Link>
           </li>
           <li className="p-3 text-lg">Cart</li>
           <button

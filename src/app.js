@@ -1,5 +1,5 @@
 
-import React from "react";
+import React,{lazy} from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
@@ -7,6 +7,10 @@ import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Contact from "./components/Contact";
 import { createBrowserRouter,RouterProvider,Outlet,Link } from "react-router-dom";
+import {About} from "./components/About";
+// import Grocery from "./components/Grocery";
+
+const Grocery=lazy(()=>import("./components/Grocery"));
 
 const App=()=>{
     return (
@@ -29,6 +33,14 @@ const appRouter=createBrowserRouter([
             {
                 path:"/contact",
                 element:<Contact />,
+            },
+            {
+                path:"/about",
+                element:<About nameFromParent="this is get derived from props method" />,
+            },
+            {
+                path:"/grocery",
+                element:<Grocery />,
             },
             {
                 path:"/restaurant/:resId",
