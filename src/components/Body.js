@@ -57,7 +57,7 @@ const Body = () => {
             }}
           />
           <button
-            className="border p-1 bg-gray-300 cursor-pointer rounded-lg"
+            className="border p-1 cursor-pointer border-black bg-gray-100 rounded-md hover:bg-gray-300"
             onClick={() => {
               // const filteredRestaurant = listOfRestaurant.filter((res) =>
               const filteredRestaurant = listOfRestaurant.filter((res) =>
@@ -70,7 +70,7 @@ const Body = () => {
           </button>
         </div>
         <button
-          className="border mx-12 p-1 px-2 bg-gray-100 cursor-pointer hover:bg-gray-300 "
+          className="border mx-12 p-1 px-2 bg-gray-100 cursor-pointer hover:bg-gray-200 "
           onClick={() => {
             //  const filtered = listOfRestaurant.filter(
             const filtered = filteredRestaurant.filter(
