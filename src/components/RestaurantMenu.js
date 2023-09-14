@@ -1,59 +1,64 @@
 import useRestaurantMenu from "../utilities/useRestaurantMenu";
 import Shimmer from "./Shimmer";
-
+import { useDispatch } from "react-redux";
+import { addItem } from "../utilities/cartSlice";
 import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-const RestaurantMenu = () => {
+const RestaurantMenu = ({items}) => {
+  const dispatch = useDispatch();
+  const handleAddItem = (item) => {
+    dispatch(addItem(item));
+  };
+  const cartItems = useSelector((store) => store.cart.items);
+  console.log(cartItems);
   const { resId } = useParams();
 
   const resInfo = useRestaurantMenu(resId);
 
   if (resInfo === null) return <Shimmer />;
-  console.log(
-    resInfo?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants?.info);
-  
-  const cost =
-    resInfo?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants[0]?.info;
+  // console.log(
+  //   resInfo?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+  //     ?.info
+  // );
 
-   console.log(resInfo?.cards[1]?.card?.card?.imageGridCards)  
+   const cost =
+     resInfo?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants[0]
+       ?.info;
 
-  const menuItems =
-    resInfo?.cards[1]?.card?.card?.imageGridCards?.info;
+  // console.log(resInfo?.cards[1]?.card?.card?.imageGridCards);
+
+   const menuItems = resInfo?.cards[1]?.card?.card?.imageGridCards?.info;
 
   return (
     <div className="p-3 ">
       <div>
-        <h2 className="text-center text-3xl p-1">Menu</h2>
+        <h2 className="text-center font-bold text-3xl p-1">Menu</h2>
       </div>
-      <div className="flex justify-center">
-        <ul className=" ">
-          {menuItems.map((item) => (
-            <li
-              key={item.id}
-              className="text-lg p-4  text-center m-4 w-96 shadow-md rounded-lg flex justify-between"
-            >
-              {item.action?.text} - {cost.costForTwo} 
-              {
-                <button className="border px-2 py-1 mx-3 bg-black text-white rounded-md">
-                  Add
-                </button>
-              }
-            </li>
-          ))}
-        </ul>
-      </div>
+      
+       <div className="flex flex-wrap justify-center ">
+        {menuItems.map((item) => (
+          <div
+            key={item.id}
+            className=" p-3  text-center m-3 w-96 shadow-md rounded-lg flex justify-between "
+          >
+            <div className="">
+              <h1 className="text-2xl">{item.action?.text} </h1>
 
-      {/* <span className="m-2 my-8 border p-2 bg-gray-100 cursor-pointer">
-              Add
-            </span>
-            <label className="m-2 border">Add</label>
-            <label className="m-2 border">Add</label> */}
-
-      {/* <ul className="m-3" >
-          {menuItems.map((item) => (
-          <li key={item.id} className="list-disc ml-8 text-sm">{item.action.text} - {costForTwo}</li>
-        ))} 
-        </ul> */}
+              <h3 className=" text-md text-center p-2"> {cost.costForTwo}</h3>
+            </div>
+            {
+              <button
+                className="border  p-4 h-14 bg-black text-white rounded-md hover:bg-gray-500 items-end"
+                onClick={() => handleAddItem(item)}
+                 
+              >
+                Add+
+              </button>
+            }
+          </div>
+        ))}
+      </div> 
     </div>
   );
 };
