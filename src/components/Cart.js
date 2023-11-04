@@ -24,10 +24,10 @@ const Cart = () => {
         </button>
       </div>
       {/* <div><h1> ({cartItems}) </h1></div> */}
-          <div>
+          {/* <div>
                 
                 <RestaurantMenu items={cartItems}/>
-                </div>    
+                </div>     */}
     </div>
   );
 };

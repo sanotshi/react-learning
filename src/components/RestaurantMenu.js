@@ -49,7 +49,7 @@ const RestaurantMenu = ({items}) => {
             </div>
             {
               <button
-                className="border  p-4 h-14 bg-black text-white rounded-md hover:bg-gray-500 items-end"
+                className="border  p-3  h-14 bg-white text-red-600 text-lg rounded-md hover:bg-gray-300 items-end shadow-lg"
                 onClick={() => handleAddItem(item)}
                  
               >

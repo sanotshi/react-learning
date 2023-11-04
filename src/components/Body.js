@@ -46,10 +46,10 @@ const Body = () => {
 
   return (
     <div>
-      <div className="flex justify-center m-4">
-        <div>
+      <div className="flex justify-center m-6">
+        <div className="">
           <input
-            className="border border-black p-1 rounded-lg w-56 cursor-pointer"
+            className="border border-black p-1 h-8  w-56 cursor-pointer"
             type="text"
             value={searchText}
             onChange={(e) => {
@@ -57,7 +57,7 @@ const Body = () => {
             }}
           />
           <button
-            className="border p-1 cursor-pointer border-black bg-gray-100 rounded-md hover:bg-gray-300"
+            className="border p-1 cursor-pointer text-white bg-blue-400 hover:bg-gray-300"
             onClick={() => {
               // const filteredRestaurant = listOfRestaurant.filter((res) =>
               const filteredRestaurant = listOfRestaurant.filter((res) =>
@@ -70,7 +70,7 @@ const Body = () => {
           </button>
         </div>
         <button
-          className="border mx-12 p-1 px-2 bg-gray-100 cursor-pointer hover:bg-gray-200 "
+          className="border mx-12 p-1 px-2 bg-gray-200 cursor-pointer hover:bg-gray-200 "
           onClick={() => {
             //  const filtered = listOfRestaurant.filter(
             const filtered = filteredRestaurant.filter(
