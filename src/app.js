@@ -28,7 +28,7 @@ const App=()=>{
         </Provider>
     )
 }
-const appRouter=createBrowserRouter([
+export const appRouter=createBrowserRouter([
     {
         path:"/",
         element:<App />,
@@ -63,5 +63,3 @@ const appRouter=createBrowserRouter([
     
 ])
 
-const root=ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={appRouter} />);
