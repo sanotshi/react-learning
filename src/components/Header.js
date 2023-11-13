@@ -35,7 +35,7 @@ const Header = () => {
               <Link to="/cart">shopping_cart </Link>
             </li>
             </div>
-            <li className="text-xl"> ({cartItems.length} items)</li>
+            <li data-testid="itemList" className="text-xl"> ({cartItems.length} items)</li>
           </div>
           <div className="m-3">
           <button

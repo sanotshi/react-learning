@@ -29,14 +29,14 @@ export class About extends Component {
     return (
       <div>
       <div>
-<h1 className="text-3xl font-bold text-center m-8 p-4 text-orange-400">your best services</h1>
+<h1 className="text-3xl font-bold text-center m-8 p-4 text-red-500">Your Best Services</h1>
       </div>
       <div className="bg-orange-400 ">
         
         {/* <h1>{this.state.name}</h1>
         <p id="stateChanged"></p> */}
     
-        <p className="text-3xl text-white m-8 p-16 align-middle">
+        <p className="text-2xl text-white m-8 p-16 text-center indent-4">
 Our mission is to elevate the quality of life for the urban consumer with unparalleled convenience. Convenience is what makes us tick. It's what makes us get out of bed and say, "Let's do this."</p>
       </div>
 <div className="text-center m-12">

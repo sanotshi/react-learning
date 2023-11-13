@@ -5,13 +5,13 @@ import { addItem } from "../utilities/cartSlice";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-const RestaurantMenu = ({items}) => {
+const RestaurantMenu = ({}) => {
   const dispatch = useDispatch();
   const handleAddItem = (item) => {
     dispatch(addItem(item));
   };
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
+  // console.log(cartItems);
   const { resId } = useParams();
 
   const resInfo = useRestaurantMenu(resId);
@@ -31,18 +31,18 @@ const RestaurantMenu = ({items}) => {
    const menuItems = resInfo?.cards[1]?.card?.card?.imageGridCards?.info;
 
   return (
-    <div className="p-3 ">
+    <div  className="p-3 ">
       <div>
         <h2 className="text-center font-bold text-3xl p-1">Menu</h2>
       </div>
       
-       <div className="flex flex-wrap justify-center ">
+       <div  className="flex flex-wrap justify-center ">
         {menuItems.map((item) => (
           <div
             key={item.id}
             className=" p-3  text-center m-3 w-96 shadow-md rounded-lg flex justify-between "
           >
-            <div className="">
+            <div data-testid="resList" className="">
               <h1 className="text-2xl">{item.action?.text} </h1>
 
               <h3 className=" text-md text-center p-2"> {cost.costForTwo}</h3>
